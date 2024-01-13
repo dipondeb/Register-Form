@@ -51,7 +51,11 @@ class _HomepageState extends State<Homepage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Photo Studio'),
+        title: Text('Photo Studio',
+        style: TextStyle(
+            color: Colors.white,
+        ),
+        ),
         backgroundColor: Colors.green,
       ),
       drawer: Drawer(),
@@ -99,6 +103,7 @@ class _HomepageState extends State<Homepage> {
                 child: TextField(
                   decoration: InputDecoration(
                     label: Text('Password'),
+
                     border: OutlineInputBorder(),
                   ),
                 ),
@@ -118,7 +123,11 @@ class _HomepageState extends State<Homepage> {
               ElevatedButton(onPressed: (){
                 MyAlertDialog(context);
               },
-                  child: Text('Submit'),
+                  child: Text('Submit',
+                  style: TextStyle(
+                    fontSize: 20,
+                    ),
+                  ),
                 style: buttonStyle,
               ),
               Padding(
