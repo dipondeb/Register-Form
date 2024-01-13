@@ -55,85 +55,87 @@ class _HomepageState extends State<Homepage> {
         backgroundColor: Colors.green,
       ),
       drawer: Drawer(),
-      body: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Text('Register Now',
-              style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: TextField(
-                decoration: InputDecoration(
-                  fillColor: Colors.white,
-                  label: Text('First Name'),
-                  border: OutlineInputBorder(),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Text('Register Now',
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: TextField(
+                  decoration: InputDecoration(
+                    fillColor: Colors.white,
+                    label: Text('First Name'),
+                    border: OutlineInputBorder(),
+                  ),
                 ),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: TextField(
-                decoration: InputDecoration(
-                  label: Text('Last Name'),
-                  border: OutlineInputBorder(),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: TextField(
+                  decoration: InputDecoration(
+                    label: Text('Last Name'),
+                    border: OutlineInputBorder(),
+                  ),
                 ),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: TextField(
-                decoration: InputDecoration(
-                  label: Text('Email Address'),
-                  border: OutlineInputBorder(),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: TextField(
+                  decoration: InputDecoration(
+                    label: Text('Email Address'),
+                    border: OutlineInputBorder(),
+                  ),
                 ),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: TextField(
-                decoration: InputDecoration(
-                  label: Text('Password'),
-                  border: OutlineInputBorder(),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: TextField(
+                  decoration: InputDecoration(
+                    label: Text('Password'),
+                    border: OutlineInputBorder(),
+                  ),
                 ),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: TextField(
-                decoration: InputDecoration(
-                  label: Text('Confim Password'),
-                  border: OutlineInputBorder(),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: TextField(
+                  decoration: InputDecoration(
+                    label: Text('Confim Password'),
+                    border: OutlineInputBorder(),
+                  ),
                 ),
               ),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            ElevatedButton(onPressed: (){
-              MyAlertDialog(context);
-            },
-                child: Text('Submit'),
-              style: buttonStyle,
-            ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(0, 50, 0, 10),
-              child: Text('Forget passsword',
-              style: TextStyle(
-                fontSize: 17,
+              SizedBox(
+                height: 20,
               ),
+              ElevatedButton(onPressed: (){
+                MyAlertDialog(context);
+              },
+                  child: Text('Submit'),
+                style: buttonStyle,
               ),
-            ),
-            Text('Create another account',
-              style: TextStyle(
-                fontSize: 17,
+              Padding(
+                padding: const EdgeInsets.fromLTRB(0, 50, 0, 10),
+                child: Text('Forget passsword',
+                style: TextStyle(
+                  fontSize: 17,
+                ),
+                ),
               ),
-            ),
-          ],
+              Text('Create another account',
+                style: TextStyle(
+                  fontSize: 17,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
